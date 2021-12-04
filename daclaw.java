@@ -10,6 +10,7 @@ import com.qualcomm.robotcore.util.Range;
 
 @TeleOp(name = "The claw! Ooooooooh!")
 public class daclaw extends LinearOpMode {
+    //you need more psudo code
     DcMotor motor1;
     //Buttons for wheel
     boolean a, b;
@@ -17,6 +18,7 @@ public class daclaw extends LinearOpMode {
     double x;
     double y;
     double p;
+    //why the double
     //bumper and buttons (left) for cascading lift and claw
     boolean a1, b1, a2, b2;
     //Wheel speed
@@ -34,7 +36,8 @@ public class daclaw extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException{
         motor1 = hardwareMap.dcMotor.get("claw");
-        motor = hardwareMap.dcMotor.get("motor");
+        motor = hardwareMap.dcMotor.get("motor"); 
+        //be more describtive
         frontLeft = hardwareMap.dcMotor.get("frontLeft");
         frontRight = hardwareMap.dcMotor.get("frontRight");
         backLeft = hardwareMap.dcMotor.get("backLeft");
